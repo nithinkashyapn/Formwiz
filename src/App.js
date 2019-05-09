@@ -1,16 +1,16 @@
-import FormikWizard from "formik-wizard";
+import FormikWizard, { useFormikWizard } from "formik-wizard";
 import React from "react";
 
 import steps from "./steps";
 
-function FormWrapper({
+const FormWrapper = ({
 	children,
 	isLastStep,
 	status,
 	goToPreviousStep,
 	canGoBack,
 	actionLabel
-}) {
+}) => {
 	return (
 		<div>
 			{status && (
@@ -31,10 +31,11 @@ function FormWrapper({
 				</button>
 			</div>
 			<hr />
+			{"useFormikWizard"}
 			{children}
 		</div>
 	);
-}
+};
 
 function App() {
 	const handleSubmit = React.useCallback(values => {

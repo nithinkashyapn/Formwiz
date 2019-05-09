@@ -2,8 +2,8 @@ import { useFormikWizard } from "formik-wizard";
 import React from "react";
 
 function CompanyInfo() {
-	const { values } = useFormikWizard();
-
+	const { values, } = useFormikWizard();
+	console.log("Summary!!!!", values);
 	return (
 		<div>
 			<h1>Is this information correct?</h1>
