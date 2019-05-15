@@ -1,33 +1,33 @@
-.App {
-  text-align: center;
+.links {
+  margin-bottom: 10px;
+}
+.link {
+  margin: 0 10px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.tabs {
+  padding: 20px;
+  border: 1px solid #f5f5f5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type=text], input[type=email] {
+  height: 46px;
+  width: 250px;
+  border: 1px solid #b1bfc4;
+  border-radius: 3px;
+  padding-left: 8px;
+  margin: 8px 0;
+  color: #2D3036;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.next {
+  padding: 8px 20px;
+  border-radius: 3px;
+  background-color: #418bca;
+  outline: 0;
+  display: inline-block;
+  border: none;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
 }
