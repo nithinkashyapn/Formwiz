@@ -4,6 +4,7 @@ import { Field } from "formik";
 
 class LocationPage extends Component {
 	render() {
+		console.log(this);
 		return (
 			<div>
 				<div>

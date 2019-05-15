@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import { Field } from "formik";
 
 class BasicPage extends Component {
+	componentDidMount = () => {
+		// this.props.setFieldValue(this.props.values, "NININNINININIINNINI");
+	};
 	render() {
+		console.log(this);
 		return (
 			<div>
 				<div>

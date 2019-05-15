@@ -45,7 +45,7 @@ class WizardForm extends Component {
 					{props => {
 						return (
 							<div>
-								<Form>
+								<Form props={props}>
 									<Switch>
 										<Redirect
 											from="/form"
@@ -54,15 +54,30 @@ class WizardForm extends Component {
 										/>
 										<Route
 											path="/form/basic"
-											component={BasicPage}
+											render={routeProps => (
+												<BasicPage
+													{...routeProps}
+													{...props}
+												/>
+											)}
 										/>
 										<Route
 											path="/form/location"
-											component={LocationPage}
+											render={routeProps => (
+												<LocationPage
+													{...routeProps}
+													{...props}
+												/>
+											)}
 										/>
 										<Route
 											path="/form/submit"
-											component={SubmitPage}
+											render={routeProps => (
+												<SubmitPage
+													{...routeProps}
+													{...props}
+												/>
+											)}
 										/>
 									</Switch>
 								</Form>
