@@ -7,7 +7,6 @@ class BasicPage extends Component {
 		// this.props.setFieldValue(this.props.values, "NININNINININIINNINI");
 	};
 	render() {
-		console.log(this);
 		return (
 			<div>
 				<div>
